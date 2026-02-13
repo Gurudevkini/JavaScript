@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket with Function</title>
+</head>
+<style>
+  body{
+  text-align: center;
+  }
+</style>
+</head>
+<body>
+  <h1> Bat Ball Stump Game with functions PART 2</h1>
+  <button onclick="getResult('Bat')">Bat</button>
+<button onclick="getResult('Ball')">Ball</button>
+<button onclick="getResult('Stump')">Stump</button>
+
+<script>
+let computerChoice;
+
+// generate computer move
+function generateRandomChoice() {
+  let randomNumber = Math.random() * 3;
+
+  if (randomNumber <= 1) {
+    computerChoice = 'Bat';
+  } 
+  else if (randomNumber <= 2) {
+    computerChoice = 'Ball';
+  } 
+  else {
+    computerChoice = 'Stump';
+  }
+}
+
+// result logic (MAIN FUNCTION)
+function getResult(userMove) {
+
+  generateRandomChoice();
+
+  let resultMsg;
+
+  if (userMove === computerChoice) {
+    resultMsg = "It's a Tie";
+  }
+
+  else if (
+    (userMove === 'Bat' && computerChoice === 'Ball') ||
+    (userMove === 'Ball' && computerChoice === 'Stump') ||
+    (userMove === 'Stump' && computerChoice === 'Bat')
+  ) {
+    resultMsg = "User Won";
+  }
+
+  else {
+    resultMsg = "Computer Won";
+  }
+
+  alert(`You chose ${userMove}.
+Computer chose ${computerChoice}.
+${resultMsg}`);
+}
+</script>
+
+  </script>
+</body>
+</html>

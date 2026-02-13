@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects</title>
+</head>
+<body>
+  <script>
+
+let product= 
+{
+ company :'US, POLO',
+ price : 699,
+ 'item-name:': 'T shrit',
+ 
+   // 3435,'barcode',
+};
+console.log("Your object contains", product);
+console.log(product.company);
+console.log(product.price);
+console.log(product.item_name);
+console.log("the item price is" ,product.price);
+
+ product.price = 2837;
+ console.log(product.price);
+ // another way to acess product is
+ console.log(product['company']); 
+ console.log(product.item-details);
+
+ let propertyName = 'item-name';
+ console.log(product.propertyName);
+
+ delete product.company;
+ console.log(product);
+  </script>
+</body>
+</html>
