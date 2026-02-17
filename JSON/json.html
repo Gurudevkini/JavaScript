@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON</title>
+</head>
+<body>
+  <script>
+  let product  =
+  {
+    name: 'T shirt',
+    price: 839,
+    rating:  {
+      stars: 4.5,
+      noOfreviews: 453
+    },
+  };
+  console.log(typeof product);
+  console.log(product);
+let str= JSON.stringify(product)
+  console.log(typeof str);
+  console.log(product);
+  console.log(typeof product)
+console.log(str);
+
+let newproduct = JSON.parse(str)
+console.log(typeof newproduct);
+console.log(newproduct);
+
+/* SO Here we have learned to convert the object into string by
+ using the stringify and if we need to convert string to object
+ than use parse again it will turn the string into the object
+  </script>
+</body>
+</html>
