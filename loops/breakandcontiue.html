@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Break and Continue</title>
+</head>
+<body>
+  <script>
+// Break used to break the loop and the break out the conditon once it is been executed 
+let arr=[19,83,39,49,59,96,89,8]
+for(let i=0; i<arr.length; i++)
+
+{
+ if(arr[i]===59)
+ {
+  console.log(`Number found at index ${i}`);
+  break;
+ }
+ console.log('still looking');
+}
+
+// contuie will skip all the remaing condition that is not needed to be checked !
+// if you want to print only odd numbers
+for(let i=0; i<25; i++)
+{
+  if(i%2==0)
+{
+  continue;
+}
+}console.log(i);
+
+// where here the value is been udpated good with for loop only 
+  </script>
+</body>
+</html>

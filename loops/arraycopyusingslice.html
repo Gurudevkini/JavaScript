@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array copy using slice</title>
+</head>
+<body>
+  <script>
+    let arr=[4,5,6,7];
+   console.log( arr.slice(1,3));// arr.slice( x ,y)); so here the x is the starting 
+   //index from where it is cutted till y {NOTE :- Y is inculded here } it doesnot cutt basically
+   // It will copy the array and create a new one
+  
+   function arrCopy(arr)
+   {
+    return arr.slice(0,arr.length)
+   }
+   arr2[0]=null;
+   console.log(arr);
+   console.log(arr2);
+   console.log( arrCopy(arr));
+  
+  </script>
+</body>
+</html>

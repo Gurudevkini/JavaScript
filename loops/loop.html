@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loops</title>
+
+</head>
+<body>
+  <script>
+    // These are considered as standrad loops 
+    let num=1; // initalzing
+ while(num <=10)// conditon
+ {
+  console.log(num);
+  num++; // updating 
+ }
+
+ console.log('final value of num is:' + num);
+
+// These are know as no standrad loops 
+// where the loop is depended on the values out there !
+ let x=0;
+ while(x<1)
+ {
+   console.log(x);
+   x=Math.random()*2;
+
+ }
+ console.log('Final value of x is:'+x);
+
+
+ // When it used do while run at least once that its going to work
+ // The conditon which is break than go out one extra iteration is extra 
+ 
+  num=0;
+ do // ek bar tho chalega hi chalega bhai 
+ {
+  console.log(num);
+  num++; // updating conditon is must bro
+ } while (num>5);
+  
+ // simple udpation we want and all the 3 work could be done by him only
+  
+ for(let i=0; i<5; i++)
+ {
+  console.log(i);
+ } // conting iterations is easy it is used 
+  </script>
+</body>
+</html>

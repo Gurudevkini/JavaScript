@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //  let num = [4,55,94,-57, 8, 12,48,28];
+    //  for(let index=0; index<=6; index++)
+    //  {
+    //   console.log(num[index]);
+    //  }
+  // let index=0;
+  //    while(index < num.length)
+  //    {
+  //     console.log(num[index]);
+  //     }
+      // Accumulate patterns here like sum of numbers
+      // first you can iterate each value to get the final value 
+ let nums=[2, 4,6,7,7,9,3];
+ let sum=0;
+for(let i=0; i<nums.length; i++)
+{
+  sum+=nums[i];
+ 
+}
+ console.log(`Sum of the array is ${sum}`);
+
+ // method to return an element at a particular postion in the array 
+ function getElement(arr, position)
+ {
+  return arr[position -1];
+ }
+   let arr=[1,2,3,4,15,6,7,8,9];
+   console.log(getElement(arr,5));
+  </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Methods </title>
+</head>
+<body>
+  <Script>
+    let arr=[1,2,3];
+    console.log(arr);
+    arr.push(6);
+    console.log(arr);
+    arr.pop(0);
+    //last element will be poped
+    console.log(arr);
+    arr.shift(2)
+    console.log(arr);
+    arr.shift(10)
+    console.log(arr);
+    arr.unshift(10)
+    console.log(arr);
+
+    // if you want to add or remove from a particular postion than you can use slice 
+    let numbers=[3,5,7,5];
+    console.log(numbers)
+  //mbers.splice(1,2) // 
+  //plice in the this the first element is _ number than another one is
+    // indexed postion and another thing is refernce till where that has been cutted 
+    console.log(numbers);
+
+    // two string
+    console.log(numbers.toString());
+  
+    // sorting
+    numbers.sort()
+    console.log(numbers);
+
+
+    // value off same array copy and get the value back 
+     console.log(numbers.valueOf());
+     // array can used as refernce simalr like a object 
+     let num=numbers;
+     num[0]=39;
+     console.log(num);
+     console.log(numbers);
+
+     // Destructing also works for Arrays //
+     let [a,b,c,d]= num;
+     console.log(a + ""+ b + "" + c + ""+ d+ "");
+     
+  </Script>
+
+</body>
+</html>
