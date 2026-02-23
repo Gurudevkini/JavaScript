@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="todo.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TO DO LIST </title>
-</head>
-<body>
-  <h2 class="Main"> TO DO LIST </h2>
-  <button class="create">add</button>
-  <button class="delete">Done</button>
+  
+</head><div class="Container">
+   <h2 id="Main"> TO DO LIST </h2>
+  <div class="maindiv">
+  <input  type="text" id="textInput" placeholder="enter the task here">
+   <button class="create">add</button>
+
+  </div>
+  <ul id="listoftasks">
+  </ul>
+
+  <script src ="todo.js"> </script>
+  </div>
 </body>
 </html>

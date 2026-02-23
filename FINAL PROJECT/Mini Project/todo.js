@@ -1,22 +1,55 @@
  let todoList =[];
- 
- function addTodo() 
+
+const saved = localStorage.getItem("tasks");
+if(saved)
 {
- let inputElement = document.querySelector('#todoI');
- let todoItem = inputElement.value;
- todoList.push(todoItem); // to add the things in the end we will use the push method 
- //console.log(todoItem);
-
-
+  todoList = JSON.parse(saved);
 }
-function displayitems()
-{
-  let displayElement =document.querySelector
-  ('#to-do-items');
-   displayElement.innerText ='';
-  for(let i=0; i< todoList.length; i++)
+
+render();
+ const input = document.getElementById("textInput");
+ const addbutton= document.querySelector(".create");
+
+ addbutton.addEventListener("click", function()
+ {
+  const value= input.value; 
+  if(value ==="")
   {
-    displayElement.innerText =displayElement.innerText +"\n" +todolist[i];
-
+    return;
   }
+    todoList.push(value);
+    localStorage.setItem("tasks", JSON.stringify(todoList));
+  input.value=""
+ console.log(todoList);
+ render();
+ });
+
+
+ function render() {
+const ul= document.getElementById("listoftasks");
+ul.innerHTML="";
+
+todoList.forEach(function(item,index)
+{
+  const li = document.createElement("li");
+  li.textContent= item;
+
+const button = document.createElement("button");
+
+button.textContent="Done";
+button.classList.add("done-btn");
+
+button.addEventListener("click", function()
+{
+  todoList.splice(index,1);
+  localStorage.setItem("tasks", JSON.stringify(todoList));
+  render();
 }
+);
+
+li.appendChild(button);
+ul.appendChild(li);
+ })};
+
+
+ 
