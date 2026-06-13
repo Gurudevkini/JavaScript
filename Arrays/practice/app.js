@@ -39,17 +39,35 @@
 // }
 
 
-//5th one
-let string = "Gurudev  ";
-console.log(string.trim());
+// //5th one
+// let string = "Gurudev  ";
+// console.log(string.trim());
 
-//6thone
-let char = ["this", "is","the"," final","quesion"]
-//search is ?
-if(char.includes("is"))
+// //6thone
+// let char = ["this", "is","the"," final","quesion"]
+// //search is ?
+// if(char.includes("is"))
+// {
+//   console.log("Element in the array");
+// }
+// else{
+//   console.log("Not fpund");
+// }
+
+
+// const Square =(n) => n*n;
+
+// console.log(Square(12));
+
+
+ let id = setInterval(()=> 
 {
-  console.log("Element in the array");
+  console.log("Hello world");
 }
-else{
-  console.log("Not fpund");
-}
+,2000);
+
+setTimeout(()=> 
+{
+  clearInterval(id);
+  console.log("COmpleted 5 times Hello world");
+},10000);
