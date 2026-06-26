@@ -1,0 +1,18 @@
+.hero img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.green
+{
+  color: green;
+  text-decoration: underline  wavy;
+}
