@@ -2,7 +2,11 @@ let gameSeq=[];
 let userSeq=[];
 
 
-let btns=["yellow", "red", "purple", "blue"]
+
+
+
+
+let btns=["yellow", "red", "purple", "green"]
 let started= false;
 let level =0;
 
@@ -46,7 +50,7 @@ function levelUp()
   h2.innerText= `Level ${level}`;
 
   // random btn choose
-  let randIdx = Math.floor(Math.random()*3);
+  let randIdx = Math.floor(Math.random()*4);
   let randColor = btns[randIdx];
   let randbtn = document.querySelector(`.${randColor}`);
   // console.log(randIdx);
@@ -63,8 +67,8 @@ function levelUp()
 
 function btnPress ()
 {
-  console.log(this);
-  let btn = this;
+  console.log(this.ClassList);
+  let btn = this.classList;
   UserFlash(btn);
 }
 
